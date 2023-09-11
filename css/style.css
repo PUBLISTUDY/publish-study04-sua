@@ -2,166 +2,27 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
+body{color:#121212}
+header{display: flex; flex-direction: row; justify-content: space-between; align-items: center; padding: 19px 52px;}
+header .exit-box{padding: 18px;}
 
-/* 체크박스 커스텀 */
-main .bottom-wrap .right-box .mid-wrap .top-box .color-box input[type="checkbox"] {
-    /* 체크박스의 크기 조절 */
-    width: 40px;
-    height: 40px;
-    margin-right: 10px; /* 체크박스 간 간격 조절 */
-    /* 체크박스의 스타일 */
-    appearance: none;
-    background-color: #fff;
-    border: 2px solid #807E7E; /* 체크박스 테두리 스타일 */
-    border-radius: 30px; /* 체크박스 모서리 둥글게 */
-    cursor: pointer;
-    position: relative;
-}
+main .top-box{display: flex; flex-direction: column; align-items: center;}
+main .top-box .input-box{width: 450px; display: flex; flex-direction: row; align-items: center; justify-content: center; border: 1px solid #121212; border-radius: 6px; padding: 13px 16px; margin-bottom: 16px;}
+main .top-box .input-box input{width: 100%; border: none; }
+main .top-box .input-box input::placeholder{font-size: 16px; color: #121212;}
+main .top-box .input-box div{padding: 8px; margin-left: 8px;}
 
-main .bottom-wrap .right-box .mid-wrap .top-box .color-box input[type="checkbox"]:nth-child(1):checked::before{
-    content: '';
-    position: absolute;
-    top: 3.6px;
-    left: 3.6px;
-    width: 30px;
-    height: 30px;
-    background-color: #20C997;
-    border-radius: 30px; /* 체크박스 모서리 둥글게 */
-    margin-right: 10px; /* 체크박스 간 간격 조절 */
-    z-index: 100;
-}
+main .top-box .tag-box{display: flex; flex-direction: row; justify-content: center; font-size: 14px; letter-spacing: -0.5px; margin-bottom: 48px;}
+main .top-box .tag-box p:not(:last-child){margin-right: 16px;}
+main .top-box .tag-box p:first-child{color: #807E7E;}
+main .top-box>p{font-size: 22px; margin-bottom: 24px;}
 
-main .bottom-wrap .right-box .mid-wrap .top-box .color-box input[type="checkbox"]:nth-child(2):checked::before{
-    content: '';
-    position: absolute;
-    top: 3.6px;
-    left: 3.6px;
-    width: 30px;
-    height: 30px;
-    background-color: #AF83F8;
-    border-radius: 30px; /* 체크박스 모서리 둥글게 */
-    margin-right: 10px; /* 체크박스 간 간격 조절 */
-    z-index: 100;
-}
-
-main .bottom-wrap .right-box .mid-wrap .top-box .color-box input[type="checkbox"]:nth-child(3):checked::before{
-    content: '';
-    position: absolute;
-    top: 3.6px;
-    left: 3.6px;
-    width: 30px;
-    height: 30px;
-    background-color: #E25563;
-    border-radius: 30px; /* 체크박스 모서리 둥글게 */
-    margin-right: 10px; /* 체크박스 간 간격 조절 */
-    z-index: 100;
-}
-
-main .bottom-wrap .right-box .mid-wrap .top-box .color-box input[type="checkbox"]:nth-child(4):checked::before{
-    content: '';
-    position: absolute;
-    top: 3.6px;
-    left: 3.6px;
-    width: 30px;
-    height: 30px;
-    background-color: #121212;
-    border-radius: 30px; /* 체크박스 모서리 둥글게 */
-    margin-right: 10px; /* 체크박스 간 간격 조절 */
-    z-index: 100;
-}
-
-
-
-body{color: #121212; font-family: 'Space Grotesk', sans-serif; border-top: 16px solid #121212; }
-
-main .container{margin-left: 150px; margin-right: 150px; margin-bottom: 1174px;} 
-main h1{font-size: 54px; letter-spacing: -1px; margin-bottom: 80px; margin-top: 132px; border-bottom: 1px solid #EAEAEA; padding-bottom: 45px;}
-main .top-wrap{letter-spacing: -1px; color: #3E3E59; margin-bottom: 24px;}
-main .top-wrap .top-box{margin-bottom: 80px;}
-main .top-wrap .bottom-box{margin-bottom: 80px;}
-main .top-wrap .top-box p:first-child,
-main .top-wrap .bottom-box p:first-child{font-size: 26px; font-weight: 600;}
-main .top-wrap .top-box p:last-child,
-main .top-wrap .bottom-box p:last-child{font-size: 26px; line-height: 1;}
-
-
-main .bottom-wrap{display: flex; flex-direction: row;}
-main .bottom-wrap .left-box{margin-right: 82px;}
-main .bottom-wrap .left-box .img-box{position: relative;}
-main .bottom-wrap .left-box .img-box img {display: inline-block; margin-bottom: 20px;}
-main .bottom-wrap .left-box .img-box .txt-box{position: absolute; top: 24px; left: 24px; display:flex; flex-direction: row; }
-main .bottom-wrap .left-box .img-box .txt-box p{height: 34px; line-height: 34px; padding: 0 16px; font-weight: 600; font-size: 16px;}
-main .bottom-wrap .left-box .img-box .txt-box p:first-child{margin-right: 16px; background: #fff;}
-main .bottom-wrap .left-box .img-box .txt-box p:last-child{background: #1BA97F; color: #fff;}
-main .bottom-wrap .left-box .img-list-box{display: flex; flex-direction: row; justify-content: start;}
-main .bottom-wrap .left-box .img-list-box img:not(:last-child){display: inline-block; margin-right: 20px;}
-
-main .bottom-wrap .right-box .top-wrap .top-box{margin-bottom: 0;}
-main .bottom-wrap .right-box .top-wrap .top-box .cate{display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; margin-bottom: 8px;}
-main .bottom-wrap .right-box .top-wrap .top-box .cate p{font-size: 12px; color: #605F5F; font-weight: 300; margin-bottom: 0;}
-main .bottom-wrap .right-box .top-wrap .top-box .cate p:not(:last-child){margin-right: 12px;}
-main .bottom-wrap .right-box .top-wrap .top-box .cate p:not(:last-child)::after{content: '>'; margin-left: 4px;}
-main .bottom-wrap .right-box .top-wrap .top-box .cate p:last-child{margin-top: 1px;}
-main .bottom-wrap .right-box .top-wrap .top-box h2{font-size: 34px; color: #121212; margin-bottom: 12px; letter-spacing: -1px;}
-main .bottom-wrap .right-box .top-wrap .top-box>p{font-size: 14px; margin-bottom: 12px; letter-spacing: 1px;}
-main .bottom-wrap .right-box .top-wrap .bottom-box .star-box,
-main .bottom-wrap .right-box .top-wrap .bottom-box .star-box .star{display: flex; flex-direction: row; align-items: center;} 
-main .bottom-wrap .right-box .top-wrap .bottom-box .star-box{margin-bottom: 16px;}
-main .bottom-wrap .right-box .top-wrap .bottom-box .star-box .star img{display: inline-block; width: 16px; height: 16px;}
-main .bottom-wrap .right-box .top-wrap .bottom-box .star-box .star img:not(:last-child){margin-right: 2px;}
-main .bottom-wrap .right-box .top-wrap .bottom-box .star-box .star img:last-child{margin-right: 8px;}
-main .bottom-wrap .right-box .top-wrap .bottom-box .star-box p{font-size: 12px; color: #605F5F; letter-spacing: 0;}
-
-main .bottom-wrap .right-box .top-wrap .bottom-box .won{display: flex; flex-direction: row; align-items: center; letter-spacing: 0; margin-bottom: 16px;}
-main .bottom-wrap .right-box .top-wrap .bottom-box .won p:first-child{font-size: 26px; margin-right: 12px; font-weight: 700;}
-main .bottom-wrap .right-box .top-wrap .bottom-box .won p:last-child{font-size: 16px; color: #A7A7A7;}
-main .bottom-wrap .right-box .top-wrap .bottom-box .view{position: relative; display: flex; flex-direction: row; align-items: center; }
-main .bottom-wrap .right-box .top-wrap .bottom-box .view::after{content: ''; position: absolute; width: 456px; height: 1px; top: 48px; left: 0; border-bottom: 1px solid #EAEAEA;}
-main .bottom-wrap .right-box .top-wrap .bottom-box .view p{font-size: 16px; margin-left: 8px; font-weight: 500;}
-main .bottom-wrap .right-box .top-wrap .bottom-box .view span{font-weight: 700;}
-
-main .bottom-wrap .right-box .mid-wrap{padding-top: 24px;}
-main .bottom-wrap .right-box .mid-wrap .top-box>p{font-size: 12px; color: #605F5F; font-weight: 700; margin-bottom: 12px;}
-main .bottom-wrap .right-box .mid-wrap .top-box .color-box{display: flex; flex-direction: row; justify-content: flex-start; margin-bottom: 12px;}
-main .bottom-wrap .right-box .mid-wrap .top-box .clear{display: flex; flex-direction: row; align-items: center; margin-bottom: 24px;}
-main .bottom-wrap .right-box .mid-wrap .top-box .clear img{display: inline-block; margin-right: 2px; padding: 3px;} 
-main .bottom-wrap .right-box .mid-wrap .top-box .clear p{font-size:12px; color:#605F5F; font-weight: 700; }
-
-main .bottom-wrap .right-box .mid-wrap .mid-box>p{font-size:12px; color:#605F5F; font-weight: 700; margin-bottom: 12px;}
-main .bottom-wrap .right-box .mid-wrap .mid-box .size button{padding: 8px 15px; border: 1px solid #121212; margin-bottom: 12px;}
-main .bottom-wrap .right-box .mid-wrap .mid-box .size button:not(:last-child){margin-right: 16px;}
-main .bottom-wrap .right-box .mid-wrap .mid-box .clear{display: flex; flex-direction: row; align-items: center; margin-bottom: 24px;}
-main .bottom-wrap .right-box .mid-wrap .mid-box .clear img{display: inline-block; margin-right: 2px; padding: 3px;}
-main .bottom-wrap .right-box .mid-wrap .mid-box .clear p{font-size:12px; color:#605F5F; font-weight: 700; }
-main .bottom-wrap .right-box .mid-wrap .mid-box .size-txt-box{display: flex; flex-direction: row; margin-top: 8px; margin-bottom: 24px;}
-main .bottom-wrap .right-box .mid-wrap .mid-box .size-txt-box .left-box{display: flex; flex-direction: row; align-items: center; margin-right: 24px;}
-main .bottom-wrap .right-box .mid-wrap .mid-box .size-txt-box .left-box p{margin-left: 8px; font-size: 12px; font-weight: 700;}
-main .bottom-wrap .right-box .mid-wrap .mid-box .size-txt-box .right-box{display: flex; flex-direction: row; align-items: center;}
-main .bottom-wrap .right-box .mid-wrap .mid-box .size-txt-box .right-box p{margin-left: 8px; font-size: 12px; font-weight: 700;}
-main .bottom-wrap .right-box .mid-wrap .bottom-wrap{display: flex; flex-direction: column; }
-main .bottom-wrap .right-box .mid-wrap .bottom-wrap .cnt-btn{display: flex; flex-direction: row; justify-content: space-between; padding: 12px 16px; background: #F5F5F5;}
-main .bottom-wrap .right-box .mid-wrap .bottom-wrap .cnt-btn button{font-size: 16px; font-weight: 700;}
-main .bottom-wrap .right-box .mid-wrap .bottom-wrap .cnt-btn button:nth-child(1),
-main .bottom-wrap .right-box .mid-wrap .bottom-wrap .cnt-btn button:nth-child(3){font-size: 26px; font-weight: 300;}
-main .bottom-wrap .right-box .mid-wrap .bottom-wrap .cart-box{padding: 10px 0; text-align: center; background: #121212; color: #fff; margin-top: 16px; font-size: 18px; letter-spacing: -1px; margin-bottom: 34px;}
-
-main .bottom-wrap .right-box .bot-wrap .icon-box{display: flex; flex-direction: row; justify-content: flex-start;  padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid #EAEAEA;}
-main .bottom-wrap .right-box .bot-wrap .icon-box .like,
-main .bottom-wrap .right-box .bot-wrap .icon-box .Ask,
-main .bottom-wrap .right-box .bot-wrap .icon-box .share{display: flex; flex-direction: row; align-items: center;}
-main .bottom-wrap .right-box .bot-wrap .icon-box .like,
-main .bottom-wrap .right-box .bot-wrap .icon-box .Ask{margin-right: 32px;}
-main .bottom-wrap .right-box .bot-wrap .icon-box .like img,
-main .bottom-wrap .right-box .bot-wrap .icon-box .Ask img,
-main .bottom-wrap .right-box .bot-wrap .icon-box .share img{display: inline-block; margin-right: 6px;}
-main .bottom-wrap .right-box .bot-wrap .icon-box .like p,
-main .bottom-wrap .right-box .bot-wrap .icon-box .Ask p,
-main .bottom-wrap .right-box .bot-wrap .icon-box .share p{font-size: 16px; font-weight: 500;}
-main .bottom-wrap .right-box .bot-wrap .txt-box .sku,
-main .bottom-wrap .right-box .bot-wrap .txt-box .cate,
-main .bottom-wrap .right-box .bot-wrap .txt-box .tags{display: flex; flex-direction: row;}
-main .bottom-wrap .right-box .bot-wrap .txt-box p:first-child{font-size: 12px; color: #807E7E;}
-main .bottom-wrap .right-box .bot-wrap .txt-box p:last-child{font-size: 12px;}
-main .bottom-wrap .right-box .bot-wrap .txt-box .sku p:first-child{margin-right: 98px; margin-bottom: 8px;}
-main .bottom-wrap .right-box .bot-wrap .txt-box .cate p:first-child{margin-right: 58px; margin-bottom: 8px;}
-main .bottom-wrap .right-box .bot-wrap .txt-box .tags p:first-child{margin-right: 92px; margin-bottom: 8px;}
+main .bottom-box{width: 100%; padding-bottom: 40px; }
+main .bottom-box .card-wrap{display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap;}
+main .bottom-box .card-wrap .card-box{width: 100%; display: flex; flex-direction: row; justify-content: center; margin-bottom: 56px;}
+main .bottom-box .card-wrap .card-box .card:not(:last-child){margin-right: 32px;}
+main .bottom-box .card-wrap .card-box .card img{display: inline-block; margin-bottom: 12px;}
+main .bottom-box .card-wrap .card-box .card .txt> p{font-size: 16px; font-weight: 600; letter-spacing: -0.5px; margin-bottom: 4px;}
+main .bottom-box .card-wrap .card-box .card .txt .price{display: flex; flex-direction: row; align-items: center; font-size: 14px}
+main .bottom-box .card-wrap .card-box .card .txt .price p:first-child{margin-right: 12px; font-weight: 600;}
+main .bottom-box button{display: flex; flex-direction: row; justify-content: center; padding: 12px 26px; background: #121212; color: #fff; border-radius: 6px;}
